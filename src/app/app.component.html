@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="app-title" nz-typography>desifreestyle</h2>
+  <h1 class="word" nz-typography>{{ word$ | async }}</h1>
+  <div class="slider-container" nz-row>
+    <h4 nz-col nzXs="24" nzSm="6" nzMd="4" class="label" nz-typography>
+      interval
+    </h4>
+    <div nz-col nzXs="24" nzSm="18" nzMd="20">
+      <nz-slider
+        [(ngModel)]="intervalValue"
+        [nzTooltipVisible]="'always'"
+        nzMax="10"
+        nzMin="2"
+        (ngModelChange)="onIntervalChange($event)"
+      ></nz-slider>
+    </div>
+  </div>
+</div>
