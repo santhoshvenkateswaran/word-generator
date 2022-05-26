@@ -22,15 +22,23 @@
   .label {
     display: flex;
     align-items: center;
-    padding-left: 0.25rem;
+    justify-content: center;
+    padding-left: 1rem;
+  }
 
-    @media screen and (min-width: 576px) {
-      justify-content: flex-end;
-      padding-right: 1rem;
+  .slider-container {
+    display: flex;
+    padding: 0 2rem;
+    justify-content: center;
+
+    @media screen and (max-width: 575px) {
+      padding: 0;
     }
   }
 
   nz-slider {
+    flex-grow: 1;
+    max-width: 800px;
     padding: 1rem;
   }
 
