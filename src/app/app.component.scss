@@ -30,10 +30,22 @@
     display: flex;
     padding: 0 2rem;
     justify-content: center;
+    position: relative;
 
     @media screen and (max-width: 575px) {
       padding: 0;
     }
+  }
+
+  .youtube-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(-315px - 2rem - 2rem - 4rem);
   }
 
   nz-slider {
