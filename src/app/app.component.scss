@@ -46,6 +46,11 @@
     left: 0;
     right: 0;
     bottom: calc(-315px - 2rem - 2rem - 4rem);
+    flex-direction: column;
+  }
+
+  .video-desc {
+    text-align: center;
   }
 
   nz-slider {
